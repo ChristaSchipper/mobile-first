@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+<header class="header">
+    <nav class="navbar">
+      <!-- Fimaets logo -->
+        <a href="index.html">
+      <img src="img/Logo.png" class="companylogo" alt="ok">
+      </a>
+    
+      <!-- Search bar -->
+      <div class="box-container">
+        <table class= "elements-container">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Search" class="search">
+                </td>
+                <td>
+                    <a href="#"><i class="material-icons"><span class="material-symbols-outlined">
+                        search
+                        </span></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    
+      </div>
+            <!-- Menu items -->
+            <ul class="nav-menu">
+                <li><a href="index2.html" class="navitem">Billedegalleri </a></li>
+                <li><a href="index7.html" class="navitem">Om væksthusene </a></li>
+                <li><a href="index7.html" class="navitem">Klimazonerne </a></li>
+                <li><a href="index7.html" class="navitem">Aktiviteter og udstilling</a></li>
+                <li><a href="index7.html" class="navitem">Besøgsinformation </a></li>
+                <li><a href="index7.html" class="navitem">Nyheder og opdateringer </a></li>
+                <li><a href="index7.html" class="navitem">Kontakt os </a></li> 
+            </ul>
+            
+            <!-- Burger -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <script>
+                const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+        
+            hamburger.addEventListener("click", mobileMenu);
+        
+            function mobileMenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+        
+            const navLink = document.querySelectorAll(".nav-link");
+        
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
+        
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
+        </script>
+</header>
+        
+    
+<main class="container">   
+    <div class="content-container">        
+        <div class="content-wrapper">
+            <img class="velkommenbillede" src="Img/Kort forside.svg" alt="Vaeksthusene frontphoto">
+
+                <div class="content_text">
+                        <h1 class="velkommen">Velkommen til <br> Væksthusene</h1>
+                        <p class="velkommentekst">Gå på opdagelse i de fire forskellige <br> 
+                        klimazona med smukke blomster,<br> 
+                        fascinerende fortællinger og <br> 
+                        spændende planter. </p>   
+                    </div>
+          
+            <div class="sommerfugl_1"> 
+                <img src="Img/sommefugl.png" alt="Sommerfugl 1" id="sommerfugl_1"> 
+            </div>
+
+            <div class="sommerfugl_2"> 
+                <img src="Img/sommefugl.png" alt="Sommerfugl 1" id="sommerfugl_2"> 
+            </div>
+
+            <div class="sommerfugl_3"> 
+                <img src="Img/sommefugl.png" alt="Sommerfugl 1" id="sommerfugl_3"> 
+            </div>
+
+            <div class="aakande"> 
+                <img src="Img/aakande.png" alt="Aakande decoration" id="aakande"> 
+            </div>
+
+            <h2 class="tropertekst">Troperne</h2>
+        </div>
+         
+    </div>
+   
+<div class="husene">
+
+        <div class="section1">
+                <a href="index2.html">
+                <img class="husbillede1" src="Img/Cirkelmiddelhavshus.png" alt="Middelhavshuset">
+                </a>    
+            <p class="hustekst" id="middelhavshus_tekst">Middelhavshuset</p> 
+                <img class="middelhavsgren" src="Img/bladgren.png" alt="middelhavsgren"> 
+                <img class="olivengren" src="Img/olivengren2.png" alt="olivengren"> 
+        </div>
+
+        <div class="section2">
+                <a href="index3.html"> <img class="husbillede2" src="Img/Cirkeloerkenhus.png" alt="Oerkenhuset"></a>
+            <p class="hustekst">Ørkenhuset</p>
+                <img class="vissengren" src="Img/vissengren 1.png" alt="oerkendekoration">
+               
+        </div>
+    
+        <div class="section3">
+                <a href="index4.html">
+                <img class="husbillede3" src="Img/CirkelBjergskovhus.png" alt="Bjergskovshuset">
+                </a>
+            <p class="hustekst">Bjergskovshuset</p>
+                <img class="bjergskovsgren1" src="img/bladgren2.png" alt="bjergskovsgren1">
+                <img class="bjergskovsgren2"src="Img/blomstgren.png" alt="bjergskovsgren2">
+        </div>
+
+        <div class="section4">
+                <a href="index5.html">
+                <img class="husbillede4" src="Img/Cirkeltropehus.png" alt="Tropehuset">
+                </a>
+            <p class="hustekst">Tropehuset</p>
+                <img class="tropeblad" src="Img/stortblad 1.png" alt="tropicalleaf">
+                <img class="tropepalme" src="Img/palme 1.png" alt="palmdecoration">
+        </div>
+    
+        <div class="section5">
+            <div class="spirevipbillede-container">
+                <a href="index6.html"> <img class="spirevipbillede" src="Img/tagmedspire.png" alt="Kom med paa eventyr!">
+                <div class="spirevibtekst-overlay">
+                <p class="spireviptekst" id>Tag med Spirevip på <br> eventyr!</p></a>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="footer_grid">
+        <footer class="footer">      
+                <div class="boks_container">
+                    <div class="tre_bokse"></div>
+                    <div class="tre_bokse"></div>
+                    <div class="tre_bokse"></div>
+                </div>
+
+                <div class="info_container">
+                    <div>
+                        <p class="info_a">Adresse:</p>
+                        <p class="info_t">Tlf:</p>
+                        <p class="info_e">E-mail:</p>
+                    </div>
+                </div>
+
+                <div class="adresse_container">
+                    <div>
+                        <p class="adresse">Peter Holms Vej<br>8000 Aarhus C</p>
+                    </div> 
+                    <div class="tlf_container">
+                        <p class="tlf">+45 87155415</p>
+                    </div>
+                    <div class="mail_container">
+                        <p class="mail">sm@au.dk</p>
+                    </div>
+                </div>
+
+                <div class="some_container">
+                    <a href="http://www.instagram.com" target="_blank"><img src="Img/insta.png" alt="instagram_logo" class="some_image"></a>
+                    <a href="http://www.facebook.com" target="_blank"><img src="Img/facebook.png" alt="facebook_logo" class="some_image"></a>
+                    <a href="http://www.twitter.com" target="_blank"><img src="Img/twitter.png" alt="twitter_logo" class="some_image"></a>
+                </div>
+        </footer>
+    </div>
+</div>
+</main>
+
+
+</body>
+
+</html>
+
